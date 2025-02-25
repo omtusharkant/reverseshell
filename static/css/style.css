@@ -1,0 +1,45 @@
+body {
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #dcdcdc;
+    text-align: center;
+}
+#commandinput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+#commandInput{
+    padding: 10px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.modern-button {
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.modern-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.modern-button:active {
+    background-color: #004494;
+    transform: translateY(0);
+}

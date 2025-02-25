@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Command Runner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+   
+
+    <h1 id="runheading">Run Command on Local Machine</h1>
+    <div id="commandinput">
+    <input type="text" id="commandInput" placeholder="Enter command">
+    <button class="modern-button" onclick="sendCommand()">Run Command</button>
+</div>
+    
+    <pre id="output"></pre>
+    
+    <h2>Active Clients: <span id="clientCount">0</span></h2>
+</body>
+</html>
